@@ -20,6 +20,8 @@
 		576A68B62100272500621963 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A68B02100272500621963 /* NSString+Extension.m */; };
 		576A68B72100272500621963 /* UIApplication+TopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A68B12100272500621963 /* UIApplication+TopView.m */; };
 		576A68B82100272500621963 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A68B32100272500621963 /* UIColor+Extension.m */; };
+		576D1DDD21103632003C4387 /* UIButton+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 576D1DDC21103632003C4387 /* UIButton+Init.m */; };
+		576D1DE0211052B7003C4387 /* UIButton+chain.m in Sources */ = {isa = PBXBuildFile; fileRef = 576D1DDF211052B7003C4387 /* UIButton+chain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,10 @@
 		576A68B12100272500621963 /* UIApplication+TopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TopView.m"; sourceTree = "<group>"; };
 		576A68B22100272500621963 /* UIView+Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Location.h"; sourceTree = "<group>"; };
 		576A68B32100272500621963 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		576D1DDB21103632003C4387 /* UIButton+Init.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Init.h"; sourceTree = "<group>"; };
+		576D1DDC21103632003C4387 /* UIButton+Init.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Init.m"; sourceTree = "<group>"; };
+		576D1DDE211052B7003C4387 /* UIButton+chain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+chain.h"; sourceTree = "<group>"; };
+		576D1DDF211052B7003C4387 /* UIButton+chain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+chain.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +175,10 @@
 				576A68B32100272500621963 /* UIColor+Extension.m */,
 				576A68B22100272500621963 /* UIView+Location.h */,
 				576A68AC2100272500621963 /* UIView+Location.m */,
+				576D1DDB21103632003C4387 /* UIButton+Init.h */,
+				576D1DDC21103632003C4387 /* UIButton+Init.m */,
+				576D1DDE211052B7003C4387 /* UIButton+chain.h */,
+				576D1DDF211052B7003C4387 /* UIButton+chain.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -307,6 +317,8 @@
 				576A68B72100272500621963 /* UIApplication+TopView.m in Sources */,
 				576A68B62100272500621963 /* NSString+Extension.m in Sources */,
 				576A68B82100272500621963 /* UIColor+Extension.m in Sources */,
+				576D1DDD21103632003C4387 /* UIButton+Init.m in Sources */,
+				576D1DE0211052B7003C4387 /* UIButton+chain.m in Sources */,
 				576A68B42100272500621963 /* UIView+Location.m in Sources */,
 				576A68842100265300621963 /* main.m in Sources */,
 				576A68B52100272500621963 /* NSAttributedString+Extension.m in Sources */,

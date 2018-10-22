@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIButton+Init.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIButton * button = [UIButton buttonWithSuperView:self.view config:^(UIButton *button) {
+        button.setNorTitle(@"确定")
+        .setNorTitleColor([UIColor redColor]);
+    }];
+    button.frame = CGRectMake(100, 100, 100, 100);
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end
