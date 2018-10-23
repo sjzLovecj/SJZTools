@@ -22,6 +22,8 @@
 		576A68B82100272500621963 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A68B32100272500621963 /* UIColor+Extension.m */; };
 		576D1DDD21103632003C4387 /* UIButton+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 576D1DDC21103632003C4387 /* UIButton+Init.m */; };
 		576D1DE0211052B7003C4387 /* UIButton+chain.m in Sources */ = {isa = PBXBuildFile; fileRef = 576D1DDF211052B7003C4387 /* UIButton+chain.m */; };
+		57B62C73217EF21C00023C7F /* UIView+chain.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B62C72217EF21C00023C7F /* UIView+chain.m */; };
+		57B62C76217F0B3E00023C7F /* UIView+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B62C75217F0B3E00023C7F /* UIView+Init.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,10 @@
 		576D1DDC21103632003C4387 /* UIButton+Init.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Init.m"; sourceTree = "<group>"; };
 		576D1DDE211052B7003C4387 /* UIButton+chain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+chain.h"; sourceTree = "<group>"; };
 		576D1DDF211052B7003C4387 /* UIButton+chain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+chain.m"; sourceTree = "<group>"; };
+		57B62C71217EF21C00023C7F /* UIView+chain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+chain.h"; sourceTree = "<group>"; };
+		57B62C72217EF21C00023C7F /* UIView+chain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+chain.m"; sourceTree = "<group>"; };
+		57B62C74217F0B3E00023C7F /* UIView+Init.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Init.h"; sourceTree = "<group>"; };
+		57B62C75217F0B3E00023C7F /* UIView+Init.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Init.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		571F9152217DC30A00671F0C /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				576D1DDB21103632003C4387 /* UIButton+Init.h */,
+				576D1DDC21103632003C4387 /* UIButton+Init.m */,
+				576D1DDE211052B7003C4387 /* UIButton+chain.h */,
+				576D1DDF211052B7003C4387 /* UIButton+chain.m */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		576A68682100265300621963 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +182,9 @@
 		576A68A92100270B00621963 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				57B62C77217F0CE200023C7F /* Label */,
+				57B62C70217EF1D300023C7F /* View */,
+				571F9152217DC30A00671F0C /* Button */,
 				576A68AA2100272400621963 /* NSAttributedString+Extension.h */,
 				576A68AF2100272500621963 /* NSAttributedString+Extension.m */,
 				576A68AB2100272500621963 /* NSString+Extension.h */,
@@ -173,14 +193,28 @@
 				576A68B12100272500621963 /* UIApplication+TopView.m */,
 				576A68AE2100272500621963 /* UIColor+Extension.h */,
 				576A68B32100272500621963 /* UIColor+Extension.m */,
-				576A68B22100272500621963 /* UIView+Location.h */,
-				576A68AC2100272500621963 /* UIView+Location.m */,
-				576D1DDB21103632003C4387 /* UIButton+Init.h */,
-				576D1DDC21103632003C4387 /* UIButton+Init.m */,
-				576D1DDE211052B7003C4387 /* UIButton+chain.h */,
-				576D1DDF211052B7003C4387 /* UIButton+chain.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		57B62C70217EF1D300023C7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				576A68B22100272500621963 /* UIView+Location.h */,
+				576A68AC2100272500621963 /* UIView+Location.m */,
+				57B62C71217EF21C00023C7F /* UIView+chain.h */,
+				57B62C72217EF21C00023C7F /* UIView+chain.m */,
+				57B62C74217F0B3E00023C7F /* UIView+Init.h */,
+				57B62C75217F0B3E00023C7F /* UIView+Init.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		57B62C77217F0CE200023C7F /* Label */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Label;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,9 +347,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B62C76217F0B3E00023C7F /* UIView+Init.m in Sources */,
 				576A68792100265300621963 /* ViewController.m in Sources */,
 				576A68B72100272500621963 /* UIApplication+TopView.m in Sources */,
 				576A68B62100272500621963 /* NSString+Extension.m in Sources */,
+				57B62C73217EF21C00023C7F /* UIView+chain.m in Sources */,
 				576A68B82100272500621963 /* UIColor+Extension.m in Sources */,
 				576D1DDD21103632003C4387 /* UIButton+Init.m in Sources */,
 				576D1DE0211052B7003C4387 /* UIButton+chain.m in Sources */,

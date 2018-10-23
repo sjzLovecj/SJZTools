@@ -10,14 +10,14 @@
 
 @implementation UIButton (chain)
 
-- (UIButton *(^)(NSString *))setNorTitle {
+- (UIButton *(^)(NSString *))sjzNorTitle {
     return ^UIButton * (NSString * title) {
         [self setTitle:title forState:UIControlStateNormal];
         return self;
     };
 }
 
-- (UIButton *(^)(NSString *))setHigTitle {
+- (UIButton *(^)(NSString *))sjzHigTitle {
     return ^UIButton * (NSString * title) {
         [self setTitle:title forState:UIControlStateHighlighted];
         
@@ -25,7 +25,7 @@
     };
 }
 
-- (UIButton *(^)(NSString *))setSelTitle {
+- (UIButton *(^)(NSString *))sjzSelTitle {
     return ^UIButton * (NSString * title) {
         [self setTitle:title forState:UIControlStateSelected];
         
@@ -33,44 +33,51 @@
     };
 }
 
-- (UIButton *(^)(UIColor *))setNorTitleColor {
+- (UIButton *(^)(UIColor *))sjzNorTitleColor {
     return ^UIButton * (UIColor * titleColor) {
         [self setTitleColor:titleColor forState:UIControlStateNormal];
         return self;
     };
 }
 
-- (UIButton *(^)(UIColor *))setHigTitleColor {
+- (UIButton *(^)(UIColor *))sjzHigTitleColor {
     return ^UIButton * (UIColor * titleColor) {
         [self setTitleColor:titleColor forState:UIControlStateHighlighted];
         return self;
     };
 }
 
-- (UIButton *(^)(UIColor *))setSelTitleColor {
+- (UIButton *(^)(UIColor *))sjzSelTitleColor {
     return ^UIButton * (UIColor * titleColor) {
         [self setTitleColor:titleColor forState:UIControlStateSelected];
         return self;
     };
 }
 
-- (UIButton *(^)(NSString *))setNorImage {
-    return ^UIButton * (NSString * imageName) {
-        [self setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+- (UIButton *(^)(UIImage *))sjzNorImage {
+    return ^UIButton * (UIImage * image) {
+        [self setImage:image forState:UIControlStateNormal];
         return self;
     };
 }
 
-- (UIButton *(^)(NSString *))setHigImage {
-    return ^UIButton * (NSString * imageName) {
-        [self setImage:[UIImage imageNamed:imageName] forState:UIControlStateHighlighted];
+- (UIButton *(^)(UIImage *))sjzHigImage {
+    return ^UIButton * (UIImage * image) {
+        [self setImage:image forState:UIControlStateHighlighted];
         return self;
     };
 }
 
-- (UIButton *(^)(NSString *))setSelImage {
-    return ^UIButton * (NSString * imageName) {
-        [self setImage:[UIImage imageNamed:imageName] forState:UIControlStateSelected];
+- (UIButton *(^)(UIImage *))sjzSelImage {
+    return ^UIButton * (UIImage * image) {
+        [self setImage:image forState:UIControlStateSelected];
+        return self;
+    };
+}
+
+- (UIButton *(^)(UIFont *))sjzFont {
+    return ^UIButton * (UIFont * font) {
+        self.titleLabel.font = font;
         return self;
     };
 }
