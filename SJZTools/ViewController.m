@@ -19,12 +19,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [UIButton buttonWithTitle:@"123" norColor:nil heiColor:nil selColor:nil font:[UIFont systemFontOfSize:12] norImage:nil heiImage:nil selImage:nil backColor:[UIColor redColor] borderWidth:0 borderColor:nil cornerRadius:0 superView:self.view complete:^(UIButton *btn) {
-        btn.frame = CGRectMake(100, 200, 100, 100);
-    } touchUpBlock:^(UIButton *btn) {
-        NSLog(@"我我我我我哦我");
-    }];
+//    [UIButton buttonWithTitle:@"123" norColor:nil heiColor:nil selColor:nil font:[UIFont systemFontOfSize:12] norImage:nil heiImage:nil selImage:nil backColor:[UIColor redColor] borderWidth:0 borderColor:nil cornerRadius:0 superView:self.view complete:^(UIButton *btn) {
+//        btn.frame = CGRectMake(100, 200, 100, 100);
+//    } touchUpBlock:^(UIButton *btn) {
+//        NSLog(@"我我我我我哦我");
+//    }];
     
+    
+    [UIButton buttonWithTitle:@"123"
+                     norColor:nil
+                     heiColor:nil
+                         font:[UIFont systemFontOfSize:12]
+                     norImage:nil
+                     heiImage:nil
+                    backColor:[UIColor redColor]
+                  borderWidth:0
+                  borderColor:nil
+                 cornerRadius:0
+                    superView:self.view
+                     complete:^(UIButton *btn) {
+                     btn.frame = CGRectMake(100, 200, 100, 100);
+                 } touchUpBlock:^(UIButton *btn) {
+                     NSLog(@"我我我我我哦我");
+                 }];
 }
 
 
