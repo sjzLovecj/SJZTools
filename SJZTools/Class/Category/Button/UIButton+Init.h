@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UIButton+chain.h"
 
-typedef void (^SJZButtonComplete)(UILabel * btn);
+typedef void (^SJZButtonComplete)(id btn);
 typedef void (^touchUpBlock)(UIButton * btn);
 
 @interface UIButton (Init)
