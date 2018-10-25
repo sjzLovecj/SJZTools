@@ -16,13 +16,14 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SJZTools"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "整理一下实用方法和属性"
   s.homepage     = "https://github.com/sjzLovecj/SJZTools"
   s.source       = { :git => "https://github.com/sjzLovecj/SJZTools.git", :tag => "#{s.version}" }
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.platform     = :ios, "9.0"
   s.authors      = { "SJZ" => "shaojiazuo@163.com" }
+
   s.source_files  = "SJZTools/Class", "SJZTools/Class/**/*.{h,m}"
 
 end
