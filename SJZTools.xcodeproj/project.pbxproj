@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5727501121819BB700FECC1D /* UILabel+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 5727501021819BB700FECC1D /* UILabel+Init.m */; };
 		576A68762100265300621963 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A68752100265300621963 /* AppDelegate.m */; };
 		576A68792100265300621963 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A68782100265300621963 /* ViewController.m */; };
 		576A687C2100265300621963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576A687A2100265300621963 /* Main.storyboard */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5727500F21819BB700FECC1D /* UILabel+Init.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Init.h"; sourceTree = "<group>"; };
+		5727501021819BB700FECC1D /* UILabel+Init.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Init.m"; sourceTree = "<group>"; };
 		576A68712100265300621963 /* SJZTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJZTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		576A68742100265300621963 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		576A68752100265300621963 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -213,6 +216,8 @@
 		57B62C77217F0CE200023C7F /* Label */ = {
 			isa = PBXGroup;
 			children = (
+				5727500F21819BB700FECC1D /* UILabel+Init.h */,
+				5727501021819BB700FECC1D /* UILabel+Init.m */,
 			);
 			path = Label;
 			sourceTree = "<group>";
@@ -352,6 +357,7 @@
 				576A68B72100272500621963 /* UIApplication+TopView.m in Sources */,
 				576A68B62100272500621963 /* NSString+Extension.m in Sources */,
 				57B62C73217EF21C00023C7F /* UIView+chain.m in Sources */,
+				5727501121819BB700FECC1D /* UILabel+Init.m in Sources */,
 				576A68B82100272500621963 /* UIColor+Extension.m in Sources */,
 				576D1DDD21103632003C4387 /* UIButton+Init.m in Sources */,
 				576D1DE0211052B7003C4387 /* UIButton+chain.m in Sources */,
