@@ -19,15 +19,15 @@
  @param color           颜色
  @param font            字体大小
  @param superView       父视图
- @param completeBlock   完成设置
+ @param completeLabelBlock   完成设置
  @return 返回Label对象
  */
 + (instancetype)labelWithText:(NSString *)text
                     textColor:(UIColor *)color
                          font:(UIFont *)font
                     superView:(UIView *)superView
-                completeBlock:(completeBlock)completeBlock {
-    return [UILabel labelWithText:text textColor:color font:font numberOfLine:1 backColor:[UIColor clearColor] textAlignment:NSTextAlignmentLeft superView:superView completeBlock:completeBlock];
+                completeLabelBlock:(completeLabelBlock)completeLabelBlock {
+    return [UILabel labelWithText:text textColor:color font:font numberOfLine:1 backColor:[UIColor clearColor] textAlignment:NSTextAlignmentLeft superView:superView completeLabelBlock:completeLabelBlock];
 }
 
 /**
@@ -38,7 +38,7 @@
  @param font            字体大小
  @param backColor       背景颜色
  @param superView       父视图
- @param completeBlock   完成设置
+ @param completeLabelBlock   完成设置
  @return 返回Label对象
  */
 + (instancetype)labelWithText:(NSString *)text
@@ -46,8 +46,8 @@
                          font:(UIFont *)font
                     backColor:(UIColor *)backColor
                     superView:(UIView *)superView
-                completeBlock:(completeBlock)completeBlock {
-    return [UILabel labelWithText:text textColor:color font:font numberOfLine:1 backColor:backColor textAlignment:NSTextAlignmentLeft superView:superView completeBlock:completeBlock];
+                completeLabelBlock:(completeLabelBlock)completeLabelBlock {
+    return [UILabel labelWithText:text textColor:color font:font numberOfLine:1 backColor:backColor textAlignment:NSTextAlignmentLeft superView:superView completeLabelBlock:completeLabelBlock];
 }
 
 /**
@@ -59,7 +59,7 @@
  @param backColor       背景颜色
  @param textAlignment   文字布局方式
  @param superView       父视图
- @param completeBlock   完成设置
+ @param completeLabelBlock   完成设置
  @return 返回Label对象
  */
 + (instancetype)labelWithText:(NSString *)text
@@ -68,8 +68,8 @@
                     backColor:(UIColor *)backColor
                 textAlignment:(NSTextAlignment)textAlignment
                     superView:(UIView *)superView
-                completeBlock:(completeBlock)completeBlock {
-    return [UILabel labelWithText:text textColor:color font:font numberOfLine:1 backColor:backColor textAlignment:textAlignment superView:superView completeBlock:completeBlock];
+                completeLabelBlock:(completeLabelBlock)completeLabelBlock {
+    return [UILabel labelWithText:text textColor:color font:font numberOfLine:1 backColor:backColor textAlignment:textAlignment superView:superView completeLabelBlock:completeLabelBlock];
 }
 
 /**
@@ -81,7 +81,7 @@
  @param numberOfLine    行数
  @param backColor       背景颜色
  @param superView       父视图
- @param completeBlock   完成设置
+ @param completeLabelBlock   完成设置
  @return 返回Label对象
  */
 + (instancetype)labelWithText:(NSString *)text
@@ -90,8 +90,8 @@
                  numberOfLine:(NSInteger)numberOfLine
                     backColor:(UIColor *)backColor
                     superView:(UIView *)superView
-                completeBlock:(completeBlock)completeBlock {
-    return [UILabel labelWithText:text textColor:color font:font numberOfLine:numberOfLine backColor:backColor textAlignment:NSTextAlignmentLeft superView:superView completeBlock:completeBlock];
+                completeLabelBlock:(completeLabelBlock)completeLabelBlock {
+    return [UILabel labelWithText:text textColor:color font:font numberOfLine:numberOfLine backColor:backColor textAlignment:NSTextAlignmentLeft superView:superView completeLabelBlock:completeLabelBlock];
 }
 
 /**
@@ -104,7 +104,7 @@
  @param borderColor     描边颜色
  @param cornerRadius    圆角
  @param superView       父视图
- @param completeBlock   完成设置
+ @param completeLabelBlock   完成设置
  @return 返回Label对象
  */
 + (instancetype)labelWithText:(NSString *)text
@@ -114,9 +114,9 @@
                   borderColor:(nullable UIColor *)borderColor
                  cornerRadius:(CGFloat)cornerRadius
                     superView:(UIView *)superView
-                completeBlock:(completeBlock)completeBlock {
+                completeLabelBlock:(completeLabelBlock)completeLabelBlock {
     
-    return [UILabel labelWithText:text textColor:color font:font numberOfLine:1 backColor:[UIColor clearColor] textAlignment:NSTextAlignmentLeft borderWidth:0 borderColor:nil cornerRadius:0 superView:superView completeBlock:completeBlock];
+    return [UILabel labelWithText:text textColor:color font:font numberOfLine:1 backColor:[UIColor clearColor] textAlignment:NSTextAlignmentLeft borderWidth:0 borderColor:nil cornerRadius:0 superView:superView completeLabelBlock:completeLabelBlock];
 }
 
 
@@ -130,7 +130,7 @@
  @param backColor       背景颜色
  @param textAlignment   文字布局方式
  @param superView       父视图
- @param completeBlock   完成设置
+ @param completeLabelBlock   完成设置
  @return 返回Label对象
  */
 + (instancetype)labelWithText:(NSString *)text
@@ -140,8 +140,8 @@
                     backColor:(UIColor *)backColor
                 textAlignment:(NSTextAlignment)textAlignment
                     superView:(UIView *)superView
-                completeBlock:(completeBlock)completeBlock {
-    return [UILabel labelWithText:text textColor:color font:font numberOfLine:numberOfLine backColor:backColor textAlignment:textAlignment borderWidth:0 borderColor:nil cornerRadius:0 superView:superView completeBlock:completeBlock];
+                completeLabelBlock:(completeLabelBlock)completeLabelBlock {
+    return [UILabel labelWithText:text textColor:color font:font numberOfLine:numberOfLine backColor:backColor textAlignment:textAlignment borderWidth:0 borderColor:nil cornerRadius:0 superView:superView completeLabelBlock:completeLabelBlock];
 }
 
 
@@ -159,7 +159,7 @@
  @param borderColor     描边颜色
  @param cornerRadius    圆角
  @param superView       父视图
- @param completeBlock   完成设置
+ @param completeLabelBlock   完成设置
  @return 返回Label对象
  */
 + (instancetype)labelWithText:(NSString *)text
@@ -172,7 +172,7 @@
                   borderColor:(nullable UIColor *)borderColor
                  cornerRadius:(CGFloat)cornerRadius
                     superView:(UIView *)superView
-                completeBlock:(completeBlock)completeBlock {
+                completeLabelBlock:(completeLabelBlock)completeLabelBlock {
     UILabel * label = [[UILabel alloc] init];
     
     if(backColor) {
@@ -211,7 +211,7 @@
     
     [superView addSubview:superView];
     
-    completeBlock(label);
+    completeLabelBlock(label);
     
     if(label.layer.shadowOpacity > 0) {
         label.layer.masksToBounds = NO;

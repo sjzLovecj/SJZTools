@@ -24,6 +24,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.authors      = { "SJZ" => "shaojiazuo@163.com" }
 
-  s.source_files  = "SJZTools/Class", "SJZTools/Class/**/*.{h,m}"
+  s.source_files  = "SJZTools/Class", "SJZTools/Class/Category/Label/*.{h,m}","SJZTools/Class/Category/View/*.{h,m}","SJZTools/Class/Category/Button/*.{h,m}"
 
 end
