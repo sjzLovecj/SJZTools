@@ -26,4 +26,5 @@ Pod::Spec.new do |s|
 
   s.source_files  = "SJZTools/Class", "SJZTools/Class/Category/Label/*.{h,m}","SJZTools/Class/Category/View/*.{h,m}","SJZTools/Class/Category/Button/*.{h,m}"
 
+  s.frameworks = "Foundation","UIKit"
 end
