@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void (^completeLabelBlock)(UILabel * btn);
+typedef void (^completeLabelBlock)(UILabel * label);
 
 @interface UILabel (Init)
 
