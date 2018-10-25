@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UIButton+chain.h"
 
-//typedef void (^void (^)(UIButton * btn))(UIButton * btn);
+typedef void (^buttonComplete)(UIButton * btn);
 typedef void (^touchUpBlock)(UIButton * btn);
 
 @interface UIButton (Init)
@@ -34,7 +34,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                            font:(UIFont *)font
                       backColor:(UIColor *)backColor
                       superView:(UIView *)superView
-                  complete:(void (^)(UIButton * btn))complete
+                  complete:(buttonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -51,7 +51,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
 + (instancetype)buttonWithNorImage:(id)norImage
                          backColor:(UIColor *)backColor
                          superView:(UIView *)superView
-                     complete:(void (^)(UIButton * btn))complete
+                     complete:(buttonComplete)complete
                       touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -74,7 +74,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                        norImage:(id)norImage
                       backColor:(UIColor *)backColor
                       superView:(UIView *)superView
-                  complete:(void (^)(UIButton * btn))complete
+                  complete:(buttonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -99,7 +99,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                       backColor:(UIColor *)backColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  complete:(void (^)(UIButton * btn))complete
+                  complete:(buttonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -128,7 +128,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                     borderColor:(UIColor *)borderColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  complete:(void (^)(UIButton * btn))complete
+                  complete:(buttonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -155,7 +155,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                        heiImage:(id)heiImage
                       backColor:(UIColor *)backColor
                       superView:(UIView *)superView
-                  complete:(void (^)(UIButton * btn))complete
+                  complete:(buttonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -184,7 +184,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                       backColor:(UIColor *)backColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  complete:(void (^)(UIButton * btn))complete
+                  complete:(buttonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -217,7 +217,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                     borderColor:(UIColor *)borderColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  complete:(void (^)(UIButton * btn))complete
+                  complete:(buttonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 
@@ -245,7 +245,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                        selImage:(id)selImage
                       backColor:(UIColor *)backColor
                       superView:(UIView *)superView
-                  complete:(void (^)(UIButton * btn))complete
+                  complete:(buttonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -274,7 +274,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                       backColor:(UIColor *)backColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  complete:(void (^)(UIButton * btn))complete
+                  complete:(buttonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -307,7 +307,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                     borderColor:(UIColor *)borderColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  complete:(void (^)(UIButton * btn))complete
+                  complete:(buttonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -344,7 +344,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                     borderColor:(UIColor *)borderColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  complete:(void (^)(UIButton * btn))complete
+                  complete:(buttonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 @end

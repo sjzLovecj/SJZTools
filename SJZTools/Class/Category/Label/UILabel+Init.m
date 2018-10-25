@@ -26,7 +26,7 @@
                     textColor:(UIColor *)color
                          font:(UIFont *)font
                     superView:(UIView *)superView
-                complete:(SJZLabelComplete)complete {
+                complete:(labelComplete)complete {
     return [UILabel labelWithText:text textColor:color font:font numberOfLine:1 backColor:[UIColor clearColor] textAlignment:NSTextAlignmentLeft superView:superView complete:complete];
 }
 
@@ -46,7 +46,7 @@
                          font:(UIFont *)font
                     backColor:(UIColor *)backColor
                     superView:(UIView *)superView
-                complete:(SJZLabelComplete)complete {
+                complete:(labelComplete)complete {
     return [UILabel labelWithText:text textColor:color font:font numberOfLine:1 backColor:backColor textAlignment:NSTextAlignmentLeft superView:superView complete:complete];
 }
 
@@ -68,7 +68,7 @@
                     backColor:(UIColor *)backColor
                 textAlignment:(NSTextAlignment)textAlignment
                     superView:(UIView *)superView
-                complete:(SJZLabelComplete)complete {
+                complete:(labelComplete)complete {
     return [UILabel labelWithText:text textColor:color font:font numberOfLine:1 backColor:backColor textAlignment:textAlignment superView:superView complete:complete];
 }
 
@@ -90,7 +90,7 @@
                  numberOfLine:(NSInteger)numberOfLine
                     backColor:(UIColor *)backColor
                     superView:(UIView *)superView
-                complete:(SJZLabelComplete)complete {
+                complete:(labelComplete)complete {
     return [UILabel labelWithText:text textColor:color font:font numberOfLine:numberOfLine backColor:backColor textAlignment:NSTextAlignmentLeft superView:superView complete:complete];
 }
 
@@ -114,7 +114,7 @@
                   borderColor:(nullable UIColor *)borderColor
                  cornerRadius:(CGFloat)cornerRadius
                     superView:(UIView *)superView
-                complete:(SJZLabelComplete)complete {
+                complete:(labelComplete)complete {
     
     return [UILabel labelWithText:text textColor:color font:font numberOfLine:1 backColor:[UIColor clearColor] textAlignment:NSTextAlignmentLeft borderWidth:0 borderColor:nil cornerRadius:0 superView:superView complete:complete];
 }
@@ -140,7 +140,7 @@
                     backColor:(UIColor *)backColor
                 textAlignment:(NSTextAlignment)textAlignment
                     superView:(UIView *)superView
-                complete:(SJZLabelComplete)complete {
+                complete:(labelComplete)complete {
     return [UILabel labelWithText:text textColor:color font:font numberOfLine:numberOfLine backColor:backColor textAlignment:textAlignment borderWidth:0 borderColor:nil cornerRadius:0 superView:superView complete:complete];
 }
 
@@ -172,7 +172,7 @@
                   borderColor:(nullable UIColor *)borderColor
                  cornerRadius:(CGFloat)cornerRadius
                     superView:(UIView *)superView
-                complete:(SJZLabelComplete)complete {
+                complete:(labelComplete)complete {
     UILabel * label = [[UILabel alloc] init];
     
     if(backColor) {

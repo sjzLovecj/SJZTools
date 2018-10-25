@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void (^SJZLabelComplete)(UILabel * label);
+typedef void (^labelComplete)(UILabel * label);
 
 @interface UILabel (Init)
 
@@ -29,7 +29,7 @@ typedef void (^SJZLabelComplete)(UILabel * label);
                     textColor:(UIColor *)color
                          font:(UIFont *)font
                     superView:(UIView *)superView
-                complete:(SJZLabelComplete)complete;
+                complete:(labelComplete)complete;
 
 /**
  初始化 Label，文字、颜色、字体大小、背景颜色、父视图
@@ -47,7 +47,7 @@ typedef void (^SJZLabelComplete)(UILabel * label);
                          font:(UIFont *)font
                     backColor:(UIColor *)backColor
                     superView:(UIView *)superView
-                complete:(SJZLabelComplete)complete;
+                complete:(labelComplete)complete;
 
 /**
  初始化 Label，文字、颜色、字体大小、背景颜色、文字布局方式、父视图
@@ -67,7 +67,7 @@ typedef void (^SJZLabelComplete)(UILabel * label);
                     backColor:(UIColor *)backColor
                 textAlignment:(NSTextAlignment)textAlignment
                     superView:(UIView *)superView
-                complete:(SJZLabelComplete)complete;
+                complete:(labelComplete)complete;
 
 /**
  初始化 Label，文字、颜色、字体大小、行数、背景颜色、父视图
@@ -87,7 +87,7 @@ typedef void (^SJZLabelComplete)(UILabel * label);
                  numberOfLine:(NSInteger)numberOfLine
                     backColor:(UIColor *)backColor
                     superView:(UIView *)superView
-                complete:(SJZLabelComplete)complete;
+                complete:(labelComplete)complete;
 
 /**
  初始化 Label，文字、颜色、字体大小、描边宽度、描边颜色、圆角、父视图
@@ -109,7 +109,7 @@ typedef void (^SJZLabelComplete)(UILabel * label);
                   borderColor:(nullable UIColor *)borderColor
                  cornerRadius:(CGFloat)cornerRadius
                     superView:(UIView *)superView
-                complete:(SJZLabelComplete)complete;
+                complete:(labelComplete)complete;
 
 /**
  初始化 Label，文字、颜色、字体大小、行数、背景颜色、文字布局方式、父视图
@@ -131,7 +131,7 @@ typedef void (^SJZLabelComplete)(UILabel * label);
                     backColor:(UIColor *)backColor
                 textAlignment:(NSTextAlignment)textAlignment
                     superView:(UIView *)superView
-                complete:(SJZLabelComplete)complete;
+                complete:(labelComplete)complete;
 
 /**
  初始化 Label，文字、颜色、字体大小、行数、背景颜色、文字布局方式、描边宽度、描边颜色、圆角、父视图
@@ -159,7 +159,7 @@ typedef void (^SJZLabelComplete)(UILabel * label);
                   borderColor:(nullable UIColor *)borderColor
                  cornerRadius:(CGFloat)cornerRadius
                     superView:(UIView *)superView
-                complete:(SJZLabelComplete)complete;
+                complete:(labelComplete)complete;
 
 @end
 

@@ -19,21 +19,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(100, 200, 100, 100)];
-    label.backgroundColor = [UIColor redColor];
-    label.text = @"我是大神，大神";
-    label.textColor = [UIColor greenColor];
-    label.font = [UIFont systemFontOfSize:20];
-    label.enabled = NO;
+//    [UIButton buttonWithTitle:@"确定" norColor:[UIColor whiteColor] font:[UIFont systemFontOfSize:15] backColor:[UIColor redColor] superView:self.view complete:^(UIButton *btn) {
+//        btn.frame = CGRectMake(100, 200, 100, 100);
+//    } touchUpBlock:^(UIButton *btn) {
+//
+//    }];
     
-    label.adjustsFontSizeToFitWidth = YES;
-//    label.allowsDefaultTighteningForTruncation = YES;
-    
-    [self.view addSubview:label];
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    self.label.text = @"你们好";
+    [UIButton buttonWithTitle:@"确定" norColor:[UIColor whiteColor] selColor:[UIColor redColor] font:[UIFont systemFontOfSize:15] norImage:nil selImage:nil backColor:[UIColor redColor] superView:self.view complete:^(UIButton *btn) {
+        btn.frame = CGRectMake(100, 200, 100, 100);
+    } touchUpBlock:^(UIButton *btn) {
+        
+    }];
 }
 
 
