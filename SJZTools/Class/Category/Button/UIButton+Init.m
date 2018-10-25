@@ -33,7 +33,7 @@
                            font:(UIFont *)font
                       backColor:(UIColor *)backColor
                       superView:(UIView *)superView
-                  complete:(SJZButtonComplete)complete
+                  complete:(void (^)(UIButton * btn))complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
     return [UIButton buttonWithTitle:title norColor:norColor font:font norImage:nil backColor:backColor cornerRadius:0 superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
@@ -52,7 +52,7 @@
 + (instancetype)buttonWithNorImage:(id)norImage
                       backColor:(UIColor *)backColor
                       superView:(UIView *)superView
-                  complete:(SJZButtonComplete)complete
+                  complete:(void (^)(UIButton * btn))complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
     return [UIButton buttonWithTitle:nil norColor:nil font:nil norImage:norImage backColor:backColor cornerRadius:0 superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
@@ -77,7 +77,7 @@
                        norImage:(id)norImage
                       backColor:(UIColor *)backColor
                       superView:(UIView *)superView
-                  complete:(SJZButtonComplete)complete
+                  complete:(void (^)(UIButton * btn))complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
     return [UIButton buttonWithTitle:title norColor:norColor font:font norImage:norImage backColor:backColor cornerRadius:0 superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
@@ -105,7 +105,7 @@
                       backColor:(UIColor *)backColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  complete:(SJZButtonComplete)complete
+                  complete:(void (^)(UIButton * btn))complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
     return [UIButton buttonWithTitle:title norColor:norColor font:font norImage:norImage backColor:backColor cornerRadius:cornerRadius superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
@@ -137,7 +137,7 @@
                     borderColor:(UIColor *)borderColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  complete:(SJZButtonComplete)complete
+                  complete:(void (^)(UIButton * btn))complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
     return [UIButton buttonWithTitle:title norColor:norColor heiColor:nil selColor:nil font:font norImage:norImage heiImage:nil selImage:nil backColor:backColor borderWidth:borderWidth borderColor:borderColor cornerRadius:cornerRadius superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
@@ -166,7 +166,7 @@
                        heiImage:(id)heiImage
                       backColor:(UIColor *)backColor
                       superView:(UIView *)superView
-                  complete:(SJZButtonComplete)complete
+                  complete:(void (^)(UIButton * btn))complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
     return [UIButton buttonWithTitle:title norColor:norColor heiColor:heiColor font:font norImage:norImage heiImage:heiImage backColor:backColor cornerRadius:0 superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
@@ -197,7 +197,7 @@
                       backColor:(UIColor *)backColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  complete:(SJZButtonComplete)complete
+                  complete:(void (^)(UIButton * btn))complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
     return [UIButton buttonWithTitle:title norColor:norColor heiColor:heiColor font:font norImage:norImage heiImage:heiImage backColor:backColor cornerRadius:cornerRadius superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
@@ -233,7 +233,7 @@
                     borderColor:(UIColor *)borderColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  complete:(SJZButtonComplete)complete
+                  complete:(void (^)(UIButton * btn))complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
     
     return [UIButton buttonWithTitle:title norColor:norColor heiColor:heiColor selColor:nil font:font norImage:norImage heiImage:heiImage selImage:nil backColor:backColor borderWidth:borderWidth borderColor:borderColor cornerRadius:cornerRadius superView:superView complete:complete touchUpBlock:touchUpBlock];
@@ -263,7 +263,7 @@
                        selImage:(id)selImage
                       backColor:(UIColor *)backColor
                       superView:(UIView *)superView
-                  complete:(SJZButtonComplete)complete
+                  complete:(void (^)(UIButton * btn))complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
     return [UIButton buttonWithTitle:title norColor:norColor selColor:selColor font:font norImage:norImage selImage:selImage backColor:backColor cornerRadius:0 superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
@@ -294,7 +294,7 @@
                       backColor:(UIColor *)backColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  complete:(SJZButtonComplete)complete
+                  complete:(void (^)(UIButton * btn))complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
     return [UIButton buttonWithTitle:title norColor:norColor selColor:selColor font:font norImage:norImage selImage:selImage backColor:backColor cornerRadius:cornerRadius superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
@@ -329,7 +329,7 @@
                     borderColor:(UIColor *)borderColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                    complete:(SJZButtonComplete)complete
+                    complete:(void (^)(UIButton * btn))complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
     return [UIButton buttonWithTitle:title norColor:norColor heiColor:nil selColor:selColor font:font norImage:norImage heiImage:nil selImage:selImage backColor:backColor borderWidth:borderWidth borderColor:borderColor cornerRadius:cornerRadius superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
@@ -369,7 +369,7 @@
                     borderColor:(UIColor *)borderColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  complete:(SJZButtonComplete)complete
+                  complete:(void (^)(UIButton * btn))complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
     
     UIButton * button = [[UIButton alloc] init];
