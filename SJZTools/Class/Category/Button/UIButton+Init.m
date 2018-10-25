@@ -23,7 +23,7 @@
  @param font            字体
  @param backColor       背景颜色
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -33,9 +33,9 @@
                            font:(UIFont *)font
                       backColor:(UIColor *)backColor
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
-    return [UIButton buttonWithTitle:title norColor:norColor font:font norImage:nil backColor:backColor cornerRadius:0 superView:superView completeBlock:completeBlock touchUpBlock:touchUpBlock];
+    return [UIButton buttonWithTitle:title norColor:norColor font:font norImage:nil backColor:backColor cornerRadius:0 superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
 
 /**
@@ -44,7 +44,7 @@
  @param norImage        默认图片
  @param backColor       背景颜色
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -52,9 +52,9 @@
 + (instancetype)buttonWithNorImage:(id)norImage
                       backColor:(UIColor *)backColor
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
-    return [UIButton buttonWithTitle:nil norColor:nil font:nil norImage:norImage backColor:backColor cornerRadius:0 superView:superView completeBlock:completeBlock touchUpBlock:touchUpBlock];
+    return [UIButton buttonWithTitle:nil norColor:nil font:nil norImage:norImage backColor:backColor cornerRadius:0 superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
 
 /**
@@ -66,7 +66,7 @@
  @param norImage        默认图片
  @param backColor       背景颜色
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -77,9 +77,9 @@
                        norImage:(id)norImage
                       backColor:(UIColor *)backColor
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
-    return [UIButton buttonWithTitle:title norColor:norColor font:font norImage:norImage backColor:backColor cornerRadius:0 superView:superView completeBlock:completeBlock touchUpBlock:touchUpBlock];
+    return [UIButton buttonWithTitle:title norColor:norColor font:font norImage:norImage backColor:backColor cornerRadius:0 superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
 
 
@@ -93,7 +93,7 @@
  @param backColor       背景颜色
  @param cornerRadius    圆角
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -105,9 +105,9 @@
                       backColor:(UIColor *)backColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
-    return [UIButton buttonWithTitle:title norColor:norColor font:font norImage:norImage backColor:backColor cornerRadius:cornerRadius superView:superView completeBlock:completeBlock touchUpBlock:touchUpBlock];
+    return [UIButton buttonWithTitle:title norColor:norColor font:font norImage:norImage backColor:backColor cornerRadius:cornerRadius superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
 
 
@@ -123,7 +123,7 @@
  @param borderColor     描边颜色
  @param cornerRadius    圆角
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -137,9 +137,9 @@
                     borderColor:(UIColor *)borderColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
-    return [UIButton buttonWithTitle:title norColor:norColor heiColor:nil selColor:nil font:font norImage:norImage heiImage:nil selImage:nil backColor:backColor borderWidth:borderWidth borderColor:borderColor cornerRadius:cornerRadius superView:superView completeBlock:completeBlock touchUpBlock:touchUpBlock];
+    return [UIButton buttonWithTitle:title norColor:norColor heiColor:nil selColor:nil font:font norImage:norImage heiImage:nil selImage:nil backColor:backColor borderWidth:borderWidth borderColor:borderColor cornerRadius:cornerRadius superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
 
 /**
@@ -153,7 +153,7 @@
  @param heiImage        高亮图片
  @param backColor       背景颜色
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -166,9 +166,9 @@
                        heiImage:(id)heiImage
                       backColor:(UIColor *)backColor
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
-    return [UIButton buttonWithTitle:title norColor:norColor heiColor:heiColor font:font norImage:norImage heiImage:heiImage backColor:backColor cornerRadius:0 superView:superView completeBlock:completeBlock touchUpBlock:touchUpBlock];
+    return [UIButton buttonWithTitle:title norColor:norColor heiColor:heiColor font:font norImage:norImage heiImage:heiImage backColor:backColor cornerRadius:0 superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
 
 /**
@@ -183,7 +183,7 @@
  @param backColor       背景颜色
  @param cornerRadius    圆角
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -197,9 +197,9 @@
                       backColor:(UIColor *)backColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
-    return [UIButton buttonWithTitle:title norColor:norColor heiColor:heiColor font:font norImage:norImage heiImage:heiImage backColor:backColor cornerRadius:cornerRadius superView:superView completeBlock:completeBlock touchUpBlock:touchUpBlock];
+    return [UIButton buttonWithTitle:title norColor:norColor heiColor:heiColor font:font norImage:norImage heiImage:heiImage backColor:backColor cornerRadius:cornerRadius superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
 
 
@@ -217,7 +217,7 @@
  @param borderColor     描边颜色
  @param cornerRadius    圆角
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -233,10 +233,10 @@
                     borderColor:(UIColor *)borderColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
     
-    return [UIButton buttonWithTitle:title norColor:norColor heiColor:heiColor selColor:nil font:font norImage:norImage heiImage:heiImage selImage:nil backColor:backColor borderWidth:borderWidth borderColor:borderColor cornerRadius:cornerRadius superView:superView completeBlock:completeBlock touchUpBlock:touchUpBlock];
+    return [UIButton buttonWithTitle:title norColor:norColor heiColor:heiColor selColor:nil font:font norImage:norImage heiImage:heiImage selImage:nil backColor:backColor borderWidth:borderWidth borderColor:borderColor cornerRadius:cornerRadius superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
 
 /**
@@ -250,7 +250,7 @@
  @param selImage        选中图片
  @param backColor       背景颜色
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -263,9 +263,9 @@
                        selImage:(id)selImage
                       backColor:(UIColor *)backColor
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
-    return [UIButton buttonWithTitle:title norColor:norColor selColor:selColor font:font norImage:norImage selImage:selImage backColor:backColor cornerRadius:0 superView:superView completeBlock:completeBlock touchUpBlock:touchUpBlock];
+    return [UIButton buttonWithTitle:title norColor:norColor selColor:selColor font:font norImage:norImage selImage:selImage backColor:backColor cornerRadius:0 superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
 
 /**
@@ -280,7 +280,7 @@
  @param backColor       背景颜色
  @param cornerRadius    圆角
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -294,9 +294,9 @@
                       backColor:(UIColor *)backColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
-    return [UIButton buttonWithTitle:title norColor:norColor selColor:selColor font:font norImage:norImage selImage:selImage backColor:backColor cornerRadius:cornerRadius superView:superView completeBlock:completeBlock touchUpBlock:touchUpBlock];
+    return [UIButton buttonWithTitle:title norColor:norColor selColor:selColor font:font norImage:norImage selImage:selImage backColor:backColor cornerRadius:cornerRadius superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
 
 /**
@@ -313,7 +313,7 @@
  @param borderColor     描边颜色
  @param cornerRadius    圆角
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -329,9 +329,9 @@
                     borderColor:(UIColor *)borderColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                    completeBlock:(completeBlock)completeBlock
+                    complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
-    return [UIButton buttonWithTitle:title norColor:norColor heiColor:nil selColor:selColor font:font norImage:norImage heiImage:nil selImage:selImage backColor:backColor borderWidth:borderWidth borderColor:borderColor cornerRadius:cornerRadius superView:superView completeBlock:completeBlock touchUpBlock:touchUpBlock];
+    return [UIButton buttonWithTitle:title norColor:norColor heiColor:nil selColor:selColor font:font norImage:norImage heiImage:nil selImage:selImage backColor:backColor borderWidth:borderWidth borderColor:borderColor cornerRadius:cornerRadius superView:superView complete:complete touchUpBlock:touchUpBlock];
 }
 
 
@@ -351,7 +351,7 @@
  @param borderColor     描边颜色
  @param cornerRadius    圆角
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -369,7 +369,7 @@
                     borderColor:(UIColor *)borderColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock {
     
     UIButton * button = [[UIButton alloc] init];
@@ -440,7 +440,7 @@
     
     [superView addSubview:button];
     
-    completeBlock(button);
+    complete(button);
     
     if(button.layer.shadowOpacity > 0) {
         button.layer.masksToBounds = NO;

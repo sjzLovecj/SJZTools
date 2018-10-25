@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UIButton+chain.h"
 
-typedef void (^completeBlock)(UIButton * btn);
+typedef void (^SJZButtonComplete)(UIButton * btn);
 typedef void (^touchUpBlock)(UIButton * btn);
 
 @interface UIButton (Init)
@@ -24,7 +24,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
  @param font            字体
  @param backColor       背景颜色
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -34,7 +34,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                            font:(UIFont *)font
                       backColor:(UIColor *)backColor
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -43,7 +43,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
  @param norImage        默认图片
  @param backColor       背景颜色
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -51,7 +51,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
 + (instancetype)buttonWithNorImage:(id)norImage
                          backColor:(UIColor *)backColor
                          superView:(UIView *)superView
-                     completeBlock:(completeBlock)completeBlock
+                     complete:(SJZButtonComplete)complete
                       touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -63,7 +63,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
  @param norImage        默认图片
  @param backColor       背景颜色
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -74,7 +74,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                        norImage:(id)norImage
                       backColor:(UIColor *)backColor
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -87,7 +87,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
  @param backColor       背景颜色
  @param cornerRadius    圆角
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -99,7 +99,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                       backColor:(UIColor *)backColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -114,7 +114,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
  @param borderColor     描边颜色
  @param cornerRadius    圆角
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -128,7 +128,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                     borderColor:(UIColor *)borderColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -142,7 +142,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
  @param heiImage        高亮图片
  @param backColor       背景颜色
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -155,7 +155,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                        heiImage:(id)heiImage
                       backColor:(UIColor *)backColor
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -170,7 +170,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
  @param backColor       背景颜色
  @param cornerRadius    圆角
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -184,7 +184,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                       backColor:(UIColor *)backColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -201,7 +201,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
  @param borderColor     描边颜色
  @param cornerRadius    圆角
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -217,7 +217,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                     borderColor:(UIColor *)borderColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 
@@ -232,7 +232,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
  @param selImage        选中图片
  @param backColor       背景颜色
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -245,7 +245,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                        selImage:(id)selImage
                       backColor:(UIColor *)backColor
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -260,7 +260,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
  @param backColor       背景颜色
  @param cornerRadius    圆角
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -274,7 +274,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                       backColor:(UIColor *)backColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -291,7 +291,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
  @param borderColor     描边颜色
  @param cornerRadius    圆角
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -307,7 +307,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                     borderColor:(UIColor *)borderColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 /**
@@ -326,7 +326,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
  @param borderColor     描边颜色
  @param cornerRadius    圆角
  @param superView       父视图
- @param completeBlock     设置完方法出入的参数做的操作
+ @param complete     设置完方法出入的参数做的操作
  @param touchUpBlock    点击事件
  
  @return                button对象
@@ -344,7 +344,7 @@ typedef void (^touchUpBlock)(UIButton * btn);
                     borderColor:(UIColor *)borderColor
                    cornerRadius:(CGFloat)cornerRadius
                       superView:(UIView *)superView
-                  completeBlock:(completeBlock)completeBlock
+                  complete:(SJZButtonComplete)complete
                    touchUpBlock:(touchUpBlock)touchUpBlock;
 
 @end
