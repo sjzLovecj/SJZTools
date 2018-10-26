@@ -36,8 +36,8 @@ Pod::Spec.new do |s|
     end
 
     us.subspec 'View' do |usv|
-      usl.source_files = "SJZTools/UI/View/*.{h,m}"
-      usl.frameworks = "Foundation","UIKit"
+      usv.source_files = "SJZTools/UI/View/*.{h,m}"
+      usv.frameworks = "Foundation","UIKit"
     end
 
     us.subspec 'Button' do |usb|
