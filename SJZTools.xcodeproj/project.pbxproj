@@ -77,6 +77,7 @@
 		576D1DDC21103632003C4387 /* UIButton+Init.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Init.m"; sourceTree = "<group>"; };
 		576D1DDE211052B7003C4387 /* UIButton+chain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+chain.h"; sourceTree = "<group>"; };
 		576D1DDF211052B7003C4387 /* UIButton+chain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+chain.m"; sourceTree = "<group>"; };
+		57928F432182A75E003AB4CB /* SJZToolsUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJZToolsUI.h; sourceTree = "<group>"; };
 		57B62C71217EF21C00023C7F /* UIView+chain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+chain.h"; sourceTree = "<group>"; };
 		57B62C72217EF21C00023C7F /* UIView+chain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+chain.m"; sourceTree = "<group>"; };
 		57B62C74217F0B3E00023C7F /* UIView+Init.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Init.h"; sourceTree = "<group>"; };
@@ -142,6 +143,7 @@
 		576A68732100265300621963 /* SJZTools */ = {
 			isa = PBXGroup;
 			children = (
+				57928F422182A385003AB4CB /* UI */,
 				576A68A6210026CA00621963 /* Class */,
 				576A68742100265300621963 /* AppDelegate.h */,
 				576A68752100265300621963 /* AppDelegate.m */,
@@ -177,17 +179,14 @@
 		576A68A6210026CA00621963 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				576A68A92100270B00621963 /* Category */,
+				576A68A92100270B00621963 /* UI */,
 			);
 			path = Class;
 			sourceTree = "<group>";
 		};
-		576A68A92100270B00621963 /* Category */ = {
+		576A68A92100270B00621963 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				57B62C77217F0CE200023C7F /* Label */,
-				57B62C70217EF1D300023C7F /* View */,
-				571F9152217DC30A00671F0C /* Button */,
 				576A68AA2100272400621963 /* NSAttributedString+Extension.h */,
 				576A68AF2100272500621963 /* NSAttributedString+Extension.m */,
 				576A68AB2100272500621963 /* NSString+Extension.h */,
@@ -197,7 +196,18 @@
 				576A68AE2100272500621963 /* UIColor+Extension.h */,
 				576A68B32100272500621963 /* UIColor+Extension.m */,
 			);
-			path = Category;
+			path = UI;
+			sourceTree = "<group>";
+		};
+		57928F422182A385003AB4CB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				57B62C77217F0CE200023C7F /* Label */,
+				57B62C70217EF1D300023C7F /* View */,
+				571F9152217DC30A00671F0C /* Button */,
+				57928F432182A75E003AB4CB /* SJZToolsUI.h */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		57B62C70217EF1D300023C7F /* View */ = {
