@@ -30,19 +30,21 @@ Pod::Spec.new do |s|
     us.frameworks = "Foundation","UIKit"
     # "SJZTools/UI/Label/*.{h,m}","SJZTools/UI/View/*.{h,m}","SJZTools/UI/Button/*.{h,m}",
 
-    us.subspec 'Label' do |usl|
-      usl.source_files = "SJZTools/UI/Label/*.{h,m}"
-      usl.frameworks = "Foundation","UIKit"
-    end
-
     us.subspec 'View' do |usv|
       usv.source_files = "SJZTools/UI/View/*.{h,m}"
       usv.frameworks = "Foundation","UIKit"
     end
 
+    us.subspec 'Label' do |usl|
+      usl.source_files = "SJZTools/UI/Label/*.{h,m}"
+      usl.frameworks = "Foundation","UIKit"
+      usl.dependency 'View'
+    end
+
     us.subspec 'Button' do |usb|
       usb.source_files = "SJZTools/UI/Button/*.{h,m}"
       usb.frameworks = "Foundation","UIKit"
+      usl.dependency 'View'
     end
 
   end
