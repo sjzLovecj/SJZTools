@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.authors      = { "SJZ" => "shaojiazuo@163.com" }
 
   s.source_files  = "SJZTools/UI/SJZToolsUI.h"
-  us.public_header_files = "SJZTools/UI/SJZToolsUI.h"
+  s.public_header_files = "SJZTools/UI/SJZToolsUI.h"
 
   s.subspec 'UI' do |us|
     us.source_files = "SJZTools/UI/Label/*.{h,m}","SJZTools/UI/View/*.{h,m}","SJZTools/UI/Button/*.{h,m}","SJZTools/UI/SJZToolsUI.h"
