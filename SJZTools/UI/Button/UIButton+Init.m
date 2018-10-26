@@ -8,6 +8,7 @@
 
 #import "UIButton+Init.h"
 #import <objc/runtime.h>
+#import "UIButton+chain.h"
 
 // 判断它是否是空字符串。
 #define emptyString(s) (s == nil || [s isKindOfClass:[NSNull class]] || ([s isKindOfClass:[NSString class]] && s.length == 0))

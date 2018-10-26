@@ -7,6 +7,7 @@
 //
 
 #import "UIButton+chain.h"
+#import "UIView+chain.h"
 
 @implementation UIButton (chain)
 

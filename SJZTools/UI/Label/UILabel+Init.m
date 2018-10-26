@@ -7,6 +7,7 @@
 //
 
 #import "UILabel+Init.h"
+#import "UIView+chain.h"
 
 #define emptyString(s) (s == nil || [s isKindOfClass:[NSNull class]] || ([s isKindOfClass:[NSString class]] && s.length == 0))
 

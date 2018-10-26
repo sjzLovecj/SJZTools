@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIButton+chain.h"
 
 typedef void (^buttonComplete)(UIButton * btn);
 typedef void (^touchUpBlock)(UIButton * btn);
