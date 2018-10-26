@@ -25,11 +25,9 @@ Pod::Spec.new do |s|
   s.authors      = { "SJZ" => "shaojiazuo@163.com" }
 
   s.source_files  = "SJZTools/Class", "SJZTools/UI/Label/*.{h,m}","SJZTools/UI/View/*.{h,m}","SJZTools/UI/Button/*.{h,m}"
-
   s.frameworks = "Foundation","UIKit"
 
-
-  Spec.subspec 'ToolsUI' do |us|
+  s.subspec 'ToolsUI' do |us|
     us.source_files = "SJZTools/UI/Label/*.{h,m}","SJZTools/UI/View/*.{h,m}","SJZTools/UI/Button/*.{h,m}"
     us.frameworks = "Foundation","UIKit"
     us.public_header_files = "SJZTools/UI/SJZToolsUI.h"
