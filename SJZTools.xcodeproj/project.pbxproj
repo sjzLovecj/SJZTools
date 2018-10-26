@@ -202,20 +202,12 @@
 		57928F422182A385003AB4CB /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				57928F442182AF0D003AB4CB /* Header */,
+				57928F432182A75E003AB4CB /* SJZToolsUI.h */,
 				57B62C77217F0CE200023C7F /* Label */,
 				57B62C70217EF1D300023C7F /* View */,
 				571F9152217DC30A00671F0C /* Button */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		57928F442182AF0D003AB4CB /* Header */ = {
-			isa = PBXGroup;
-			children = (
-				57928F432182A75E003AB4CB /* SJZToolsUI.h */,
-			);
-			path = Header;
 			sourceTree = "<group>";
 		};
 		57B62C70217EF1D300023C7F /* View */ = {
