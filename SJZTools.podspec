@@ -24,13 +24,14 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.authors      = { "SJZ" => "shaojiazuo@163.com" }
 
-  s.source_files  = "SJZTools/UI/SJZToolsUI.h"
-  s.public_header_files = "SJZTools/UI/SJZToolsUI.h"
+  # s.source_files  = "SJZTools/UI/SJZToolsUI.h"
+  # s.public_header_files = "SJZTools/UI/SJZToolsUI.h"
 
   s.subspec 'UI' do |us|
-    us.source_files = "SJZTools/UI/Label/*.{h,m}","SJZTools/UI/View/*.{h,m}","SJZTools/UI/Button/*.{h,m}","SJZTools/UI/SJZToolsUI.h"
-    us.frameworks = "Foundation","UIKit"
     us.public_header_files = "SJZTools/UI/SJZToolsUI.h"
+    us.source_files = "SJZTools/UI/SJZToolsUI.h"
+    us.frameworks = "Foundation","UIKit"
+    # "SJZTools/UI/Label/*.{h,m}","SJZTools/UI/View/*.{h,m}","SJZTools/UI/Button/*.{h,m}",
   end
 
 end
