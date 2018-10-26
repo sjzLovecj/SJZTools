@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   s.subspec 'ToolsUI' do |us|
     us.source_files = "SJZTools/UI/Label/*.{h,m}","SJZTools/UI/View/*.{h,m}","SJZTools/UI/Button/*.{h,m}"
     us.frameworks = "Foundation","UIKit"
-    us.public_header_files = "SJZTools/UI/SJZToolsUI.h"
+    us.public_header_files = "SJZTools/UI/Header/SJZToolsUI.h"
   end
 
 end
