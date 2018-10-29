@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SJZTools"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "整理一下实用方法和属性"
   s.homepage     = "https://github.com/sjzLovecj/SJZTools"
   s.source       = { :git => "https://github.com/sjzLovecj/SJZTools.git", :tag => "#{s.version}" }
