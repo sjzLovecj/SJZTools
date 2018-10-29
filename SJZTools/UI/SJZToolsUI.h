@@ -19,5 +19,6 @@
 
 #import "UIButton+Init.h"
 #import "UIButton+chain.h"
+#import "UIButton+Position.h"
 
 #endif /* SJZToolsUI_h */
