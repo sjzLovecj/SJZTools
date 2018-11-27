@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5718509A21AD1DD50003996C /* SJZButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5718509921AD1DD50003996C /* SJZButton.m */; };
+		5718509F21AD207A0003996C /* SJZRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5718509E21AD207A0003996C /* SJZRouter.m */; };
 		572299DF21870C0100D1DB78 /* UIButton+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 572299DE21870C0000D1DB78 /* UIButton+Position.m */; };
 		5727501121819BB700FECC1D /* UILabel+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 5727501021819BB700FECC1D /* UILabel+Init.m */; };
 		576A68762100265300621963 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A68752100265300621963 /* AppDelegate.m */; };
@@ -46,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5718509821AD1DD50003996C /* SJZButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJZButton.h; sourceTree = "<group>"; };
+		5718509921AD1DD50003996C /* SJZButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJZButton.m; sourceTree = "<group>"; };
+		5718509D21AD207A0003996C /* SJZRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJZRouter.h; sourceTree = "<group>"; };
+		5718509E21AD207A0003996C /* SJZRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJZRouter.m; sourceTree = "<group>"; };
 		572299DD21870C0000D1DB78 /* UIButton+Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Position.h"; sourceTree = "<group>"; };
 		572299DE21870C0000D1DB78 /* UIButton+Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Position.m"; sourceTree = "<group>"; };
 		5727500F21819BB700FECC1D /* UILabel+Init.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Init.h"; sourceTree = "<group>"; };
@@ -112,6 +118,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5718509B21AD1F650003996C /* SJZButton */ = {
+			isa = PBXGroup;
+			children = (
+				5718509821AD1DD50003996C /* SJZButton.h */,
+				5718509921AD1DD50003996C /* SJZButton.m */,
+			);
+			path = SJZButton;
+			sourceTree = "<group>";
+		};
+		5718509C21AD20690003996C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5718509D21AD207A0003996C /* SJZRouter.h */,
+				5718509E21AD207A0003996C /* SJZRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5719160B2188594B00030ED1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				576A68AD2100272500621963 /* UIApplication+TopView.h */,
+				576A68B12100272500621963 /* UIApplication+TopView.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		571F9152217DC30A00671F0C /* Button */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,7 +181,6 @@
 		576A68732100265300621963 /* SJZTools */ = {
 			isa = PBXGroup;
 			children = (
-				57928F422182A385003AB4CB /* UI */,
 				576A68A6210026CA00621963 /* Class */,
 				576A68742100265300621963 /* AppDelegate.h */,
 				576A68752100265300621963 /* AppDelegate.m */,
@@ -184,33 +216,27 @@
 		576A68A6210026CA00621963 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				576A68A92100270B00621963 /* UI */,
-			);
-			path = Class;
-			sourceTree = "<group>";
-		};
-		576A68A92100270B00621963 /* UI */ = {
-			isa = PBXGroup;
-			children = (
+				5718509C21AD20690003996C /* Router */,
+				57928F422182A385003AB4CB /* UI */,
 				576A68AA2100272400621963 /* NSAttributedString+Extension.h */,
 				576A68AF2100272500621963 /* NSAttributedString+Extension.m */,
 				576A68AB2100272500621963 /* NSString+Extension.h */,
 				576A68B02100272500621963 /* NSString+Extension.m */,
-				576A68AD2100272500621963 /* UIApplication+TopView.h */,
-				576A68B12100272500621963 /* UIApplication+TopView.m */,
 				576A68AE2100272500621963 /* UIColor+Extension.h */,
 				576A68B32100272500621963 /* UIColor+Extension.m */,
 			);
-			path = UI;
+			path = Class;
 			sourceTree = "<group>";
 		};
 		57928F422182A385003AB4CB /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				57928F432182A75E003AB4CB /* SJZToolsUI.h */,
+				5719160B2188594B00030ED1 /* Application */,
 				57B62C77217F0CE200023C7F /* Label */,
 				57B62C70217EF1D300023C7F /* View */,
 				571F9152217DC30A00671F0C /* Button */,
+				5718509B21AD1F650003996C /* SJZButton */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -372,9 +398,11 @@
 				576A68B72100272500621963 /* UIApplication+TopView.m in Sources */,
 				576A68B62100272500621963 /* NSString+Extension.m in Sources */,
 				57B62C73217EF21C00023C7F /* UIView+chain.m in Sources */,
+				5718509A21AD1DD50003996C /* SJZButton.m in Sources */,
 				5727501121819BB700FECC1D /* UILabel+Init.m in Sources */,
 				572299DF21870C0100D1DB78 /* UIButton+Position.m in Sources */,
 				576A68B82100272500621963 /* UIColor+Extension.m in Sources */,
+				5718509F21AD207A0003996C /* SJZRouter.m in Sources */,
 				576D1DDD21103632003C4387 /* UIButton+Init.m in Sources */,
 				576D1DE0211052B7003C4387 /* UIButton+chain.m in Sources */,
 				576A68B42100272500621963 /* UIView+Location.m in Sources */,

@@ -34,7 +34,7 @@
 }
 
 - (UINavigationController *)currentNavigationController {
-    return [[self currentNavigationController] navigationController];
+    return [[self currentViewController] navigationController];
 }
 
 @end
