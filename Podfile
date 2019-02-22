@@ -2,6 +2,8 @@ workspace 'SJZToolsWorkSpace.xcworkspace'
 project 'SJZToolsSwift/SJZToolsSwift.xcodeproj'
 project 'SJZToolsOC/SJZToolsOC.xcodeproj'
 
+inhibit_all_warnings!
+
 target 'SJZToolsSwift' do
   platform :ios, '9.0'
   project 'SJZToolsSwift/SJZToolsSwift.xcodeproj'
