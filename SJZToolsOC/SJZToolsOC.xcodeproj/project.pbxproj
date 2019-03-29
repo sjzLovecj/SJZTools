@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		573A769822488496005D4A2D /* UIGestureRecognizer+block.m in Sources */ = {isa = PBXBuildFile; fileRef = 573A769722488496005D4A2D /* UIGestureRecognizer+block.m */; };
+		573A769D2248A984005D4A2D /* UIView+gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 573A769C2248A984005D4A2D /* UIView+gesture.m */; };
+		573A76A02248DA5B005D4A2D /* UILabel+base.m in Sources */ = {isa = PBXBuildFile; fileRef = 573A769F2248DA5B005D4A2D /* UILabel+base.m */; };
+		5746D6EC2249CAFC00D8C5EF /* UIView+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5746D6EB2249CAFC00D8C5EF /* UIView+Masonry.m */; };
+		5746D6EF2249D07B00D8C5EF /* UILabel+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5746D6EE2249D07B00D8C5EF /* UILabel+Masonry.m */; };
+		5746D6F4224A2F0300D8C5EF /* NSMutableAttributedString+base.m in Sources */ = {isa = PBXBuildFile; fileRef = 5746D6F3224A2F0300D8C5EF /* NSMutableAttributedString+base.m */; };
 		574866FA221FFD9C0020071A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 574866F9221FFD9C0020071A /* AppDelegate.m */; };
 		574866FD221FFD9C0020071A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 574866FC221FFD9C0020071A /* ViewController.m */; };
-		57486700221FFD9C0020071A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574866FE221FFD9C0020071A /* Main.storyboard */; };
 		57486702221FFD9C0020071A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57486701221FFD9C0020071A /* Assets.xcassets */; };
 		57486705221FFD9C0020071A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57486703221FFD9C0020071A /* LaunchScreen.storyboard */; };
 		57486708221FFD9C0020071A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57486707221FFD9C0020071A /* main.m */; };
 		57486712221FFD9C0020071A /* SJZToolsOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57486711221FFD9C0020071A /* SJZToolsOCTests.m */; };
 		5748671D221FFD9C0020071A /* SJZToolsOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5748671C221FFD9C0020071A /* SJZToolsOCUITests.m */; };
+		57AF88E32247E3DC00BCEB64 /* UIView+base.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AF88E22247E3DC00BCEB64 /* UIView+base.m */; };
 		D5A513141E56C0149BE9729B /* Pods_SJZToolsOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D093A3570E92205DAAC0AD /* Pods_SJZToolsOC.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,12 +43,24 @@
 
 /* Begin PBXFileReference section */
 		56D093A3570E92205DAAC0AD /* Pods_SJZToolsOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SJZToolsOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		573A769622488496005D4A2D /* UIGestureRecognizer+block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+block.h"; sourceTree = "<group>"; };
+		573A769722488496005D4A2D /* UIGestureRecognizer+block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+block.m"; sourceTree = "<group>"; };
+		573A769A2248A69D005D4A2D /* SJZUIModuleTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJZUIModuleTools.h; sourceTree = "<group>"; };
+		573A769B2248A984005D4A2D /* UIView+gesture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+gesture.h"; sourceTree = "<group>"; };
+		573A769C2248A984005D4A2D /* UIView+gesture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+gesture.m"; sourceTree = "<group>"; };
+		573A769E2248DA5B005D4A2D /* UILabel+base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+base.h"; sourceTree = "<group>"; };
+		573A769F2248DA5B005D4A2D /* UILabel+base.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+base.m"; sourceTree = "<group>"; };
+		5746D6EA2249CAFC00D8C5EF /* UIView+Masonry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Masonry.h"; sourceTree = "<group>"; };
+		5746D6EB2249CAFC00D8C5EF /* UIView+Masonry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Masonry.m"; sourceTree = "<group>"; };
+		5746D6ED2249D07B00D8C5EF /* UILabel+Masonry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Masonry.h"; sourceTree = "<group>"; };
+		5746D6EE2249D07B00D8C5EF /* UILabel+Masonry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Masonry.m"; sourceTree = "<group>"; };
+		5746D6F2224A2F0300D8C5EF /* NSMutableAttributedString+base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+base.h"; sourceTree = "<group>"; };
+		5746D6F3224A2F0300D8C5EF /* NSMutableAttributedString+base.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+base.m"; sourceTree = "<group>"; };
 		574866F5221FFD9C0020071A /* SJZToolsOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJZToolsOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		574866F8221FFD9C0020071A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		574866F9221FFD9C0020071A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		574866FB221FFD9C0020071A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		574866FC221FFD9C0020071A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		574866FF221FFD9C0020071A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57486701221FFD9C0020071A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57486704221FFD9C0020071A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57486706221FFD9C0020071A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +71,8 @@
 		57486718221FFD9C0020071A /* SJZToolsOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SJZToolsOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5748671C221FFD9C0020071A /* SJZToolsOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJZToolsOCUITests.m; sourceTree = "<group>"; };
 		5748671E221FFD9C0020071A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57AF88E12247E3DC00BCEB64 /* UIView+base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+base.h"; sourceTree = "<group>"; };
+		57AF88E22247E3DC00BCEB64 /* UIView+base.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+base.m"; sourceTree = "<group>"; };
 		685EFDDA627A05D95FEF7D6D /* Pods-SJZToolsOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJZToolsOC.release.xcconfig"; path = "Target Support Files/Pods-SJZToolsOC/Pods-SJZToolsOC.release.xcconfig"; sourceTree = "<group>"; };
 		8BAB3950748FF6110D496168 /* Pods-SJZToolsOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJZToolsOC.debug.xcconfig"; path = "Target Support Files/Pods-SJZToolsOC/Pods-SJZToolsOC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +113,40 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		573A76952248843D005D4A2D /* GestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				573A769622488496005D4A2D /* UIGestureRecognizer+block.h */,
+				573A769722488496005D4A2D /* UIGestureRecognizer+block.m */,
+			);
+			path = GestureRecognizer;
+			sourceTree = "<group>";
+		};
+		573A76992248A65F005D4A2D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				573A769A2248A69D005D4A2D /* SJZUIModuleTools.h */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		5746D6F0224A0EC400D8C5EF /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				5746D6F1224A0EEE00D8C5EF /* AttributedString */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		5746D6F1224A0EEE00D8C5EF /* AttributedString */ = {
+			isa = PBXGroup;
+			children = (
+				5746D6F2224A2F0300D8C5EF /* NSMutableAttributedString+base.h */,
+				5746D6F3224A2F0300D8C5EF /* NSMutableAttributedString+base.m */,
+			);
+			path = AttributedString;
+			sourceTree = "<group>";
+		};
 		574866EC221FFD9C0020071A = {
 			isa = PBXGroup;
 			children = (
@@ -118,11 +172,12 @@
 		574866F7221FFD9C0020071A /* SJZToolsOC */ = {
 			isa = PBXGroup;
 			children = (
+				5746D6F0224A0EC400D8C5EF /* Foundation */,
+				575F940D2244B0A40005B837 /* UIModule */,
 				574866F8221FFD9C0020071A /* AppDelegate.h */,
 				574866F9221FFD9C0020071A /* AppDelegate.m */,
 				574866FB221FFD9C0020071A /* ViewController.h */,
 				574866FC221FFD9C0020071A /* ViewController.m */,
-				574866FE221FFD9C0020071A /* Main.storyboard */,
 				57486701221FFD9C0020071A /* Assets.xcassets */,
 				57486703221FFD9C0020071A /* LaunchScreen.storyboard */,
 				57486706221FFD9C0020071A /* Info.plist */,
@@ -147,6 +202,41 @@
 				5748671E221FFD9C0020071A /* Info.plist */,
 			);
 			path = SJZToolsOCUITests;
+			sourceTree = "<group>";
+		};
+		575F940D2244B0A40005B837 /* UIModule */ = {
+			isa = PBXGroup;
+			children = (
+				573A76992248A65F005D4A2D /* Tools */,
+				573A76952248843D005D4A2D /* GestureRecognizer */,
+				575F940F2244B1F40005B837 /* View */,
+				575F940E2244B1270005B837 /* Label */,
+			);
+			path = UIModule;
+			sourceTree = "<group>";
+		};
+		575F940E2244B1270005B837 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				573A769E2248DA5B005D4A2D /* UILabel+base.h */,
+				573A769F2248DA5B005D4A2D /* UILabel+base.m */,
+				5746D6ED2249D07B00D8C5EF /* UILabel+Masonry.h */,
+				5746D6EE2249D07B00D8C5EF /* UILabel+Masonry.m */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		575F940F2244B1F40005B837 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57AF88E12247E3DC00BCEB64 /* UIView+base.h */,
+				57AF88E22247E3DC00BCEB64 /* UIView+base.m */,
+				573A769B2248A984005D4A2D /* UIView+gesture.h */,
+				573A769C2248A984005D4A2D /* UIView+gesture.m */,
+				5746D6EA2249CAFC00D8C5EF /* UIView+Masonry.h */,
+				5746D6EB2249CAFC00D8C5EF /* UIView+Masonry.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		5A8A5EB2334516456515B784 /* Frameworks */ = {
@@ -264,7 +354,6 @@
 			files = (
 				57486705221FFD9C0020071A /* LaunchScreen.storyboard in Resources */,
 				57486702221FFD9C0020071A /* Assets.xcassets in Resources */,
-				57486700221FFD9C0020071A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,9 +425,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5746D6EC2249CAFC00D8C5EF /* UIView+Masonry.m in Sources */,
 				574866FD221FFD9C0020071A /* ViewController.m in Sources */,
 				57486708221FFD9C0020071A /* main.m in Sources */,
 				574866FA221FFD9C0020071A /* AppDelegate.m in Sources */,
+				57AF88E32247E3DC00BCEB64 /* UIView+base.m in Sources */,
+				573A769D2248A984005D4A2D /* UIView+gesture.m in Sources */,
+				5746D6F4224A2F0300D8C5EF /* NSMutableAttributedString+base.m in Sources */,
+				5746D6EF2249D07B00D8C5EF /* UILabel+Masonry.m in Sources */,
+				573A76A02248DA5B005D4A2D /* UILabel+base.m in Sources */,
+				573A769822488496005D4A2D /* UIGestureRecognizer+block.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,14 +470,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		574866FE221FFD9C0020071A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				574866FF221FFD9C0020071A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		57486703221FFD9C0020071A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
